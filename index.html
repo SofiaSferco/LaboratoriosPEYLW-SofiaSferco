@@ -1,27 +1,85 @@
+<!--Recordar que todas las etiquetas y elementos que use debo cerrarlos-->
+<!--Inicio con <!DOCTYPE html> para declararle al navegador que voy a pasarle un documento HTML-->
 <!DOCTYPE html>
 <html lang="es">
+<!--Desde aqui hasta no empezar con el <body> nada va a aparecer en la pagina -->  
 <head>
+    <!--Si le pongo los meta tag le doy info a los motores de búsqueda y al navegador,
+    como todo lo que se plantea en el <head> pero no aparecen visbles en la pagina, es para agregar descripcion-->
     <meta charset="UTF-8">
+    <meta name="keywords" content="Sofia, Sferco, Comahue, Viedma">
+    <meta name="description" content="Presentacion del perfil de Sofia Sferco">
+    <meta name="author" content="Sofia Sferco">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Sofia Jimena Sferco Gil</title>
+    <!--Con <link> le voy a relacionar el archivo que contiene el formato, le voy a decir con rel que se va a relacionar con el estilo, 
+    con type el tipo de archivo que en este caso va a ser css y con href le doy el URL del archivo donde esta el formato-->
+
+    <link 
+        rel="stylesheet" 
+        type="text/css"
+        href="estilos.css">
+
+    <!--Es el tiutulo de la pestaña que vamosa ver en el navegador--> 
+    <title>Sofia Sfeco</title>
 </head>
+ <!--En el <body> voy a poner toda la informacion que quiero aparezca visible en la pagina--> 
 <body>
+    <!--Pongo el <header> porque es introductorio a la una informacion que va a tener la pagina,
+        por eso lo pongo dentro del <body>, que en este caso va ser info sobre mi, es decir pondre mi nombre a modo de titulo--> 
     <header>
-        <h1>Sofia Jimena Sferco Gil</h1>
-        <h2>Me dicen "Cordoba"</h2>
+       <!-- Tag <h1>, <h2> .. <h6>– Representan títulos para cada sección--> 
+        <h1>SOFIA JIMENA SFERCO GIL</h1>
+        
     </header>
+    <!-- <main> Representa el contenido pricipal, aca voy a incluir las secciones de la pagina y las voy a dividir con <div> >--> 
     <main>
-        <p>La idea de esta pagina es que puedas conocer mas acerca de mi. Te invito a hacer click en:</p>
-        <nav><ul><li><a href="acercademi.html">Leer mas</a></li></ul></nav>
+        <!-- <div> es el contenedor genérico para el contenido--> 
+        <div>
+            <h2>Spoiler: Me dicen "Cordoba" 😂</h2>
+        </div>
+
+        <div>
+        <!-- <p> distribuye el texto en parrafos--> 
+        <p>
+            <h3>La idea de esta pagina es que puedas conocer mas acerca de mi.</h3>
+            Podras encontrar info acerca de:
+        </p>
+        
+        <div>
+            <p>
+                <!--ahora con <ul> defino una lista no ordenada y con <li> declaro cada elemento de la lista--> 
+                <ul>
+                    <li>
+                        Mis lugares
+                    </li>
+                    <li>
+                       Edad
+                    </li>
+                    <li>
+                        Ocupacion
+                     </li>      
+                     <li>
+                       Gustos
+                     </li> 
+                </ul>
+            Si te interesa obtener mas informacion acerca de mi bio te invito a hacer click en:
+             <!--voy a usar <nav> para proporcionar el enlace de navegacion de la pagina con el documento acercademi.html,
+                y para crear ese enlace voy a usar <a> y acompaño con href con el cual defino el URL del enlace 
+                (como lo hice anteriormente con <link> para enlazar el formato)--> 
+            <nav> 
+                <a href="acercademi.html">¡Quiero leer mas! 😃</a>
+            </nav>
+        </div>
     </main>
-    <footer>
+</body>
+<!--cierro con un <footer> que sirve como pie de la pagina para dar info de los derechos y mas info extra de ubicacion o contacto podria ser--> 
+<footer>
         <p>
             Universidad Nacional del Comahue <br>
-            Sede Atlántica<br>
-            Viedma, Rio Negro<br>
-            &copy;Derechos reservados por el autor<br>
+            Sede Atlántica <br>
+            Viedma, Rio Negro <br>
+            &copy;Derechos reservados por la cátedra de PEyLW <br>
         </p>
-    </footer>   
-</body>
+</footer>   
+
 </html>
