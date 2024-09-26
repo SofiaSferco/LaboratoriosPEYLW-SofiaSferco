@@ -4,13 +4,16 @@ body{
     font-family: Arial, sans-cerif;
     background-color: #ffffff;
     color: black;
-    
 }
+
 header{
     background-color: #232423;
     padding: 20px 0;
     text-align: center;
     color: rgb(255, 255, 255);    
+}
+div{
+    text-align: justify;
 }
 
 h1{
@@ -37,48 +40,3 @@ footer{
     background-color: #232423;
     color: #ffffff;
 }
-/**{
-    margin: 0;
-    padding:0;
-    font-family: Arial, sans-cerif;
-    background-color: #ffffff;
-}
-body{
-    margin: 0;
-    padding:0;
-    font-family: Arial, sans-cerif;
-    background-color: #a13d3d;
-    color: black;
-}
-header{
-    background-color: #9ce22c;
-    padding: 20px 0;
-    text-align: center;
-    color: rgb(0, 0, 3)
-}
-h1{
-    font-size: 2.5em;
-    margin:0
-}
-h2{
-    margin-top: 10px;
-}
-main{
-    margin: 20px;
-    padding:20px auto;
-    background-color: #f4f4f4;
-    color: black;
-}
-li{
-    background-color: #abf15b;   
-}
-
-footer{
-    margin: 0;
-    padding:10px 0;
-    font-family: Arial, sans-cerif;
-    background-color: #232423;
-}
-li{
-    background-color: #ffffff; 
-}/*
