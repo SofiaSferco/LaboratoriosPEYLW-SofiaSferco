@@ -13,26 +13,36 @@ nav{
     padding: 5px; 
 }
 
-input {
-    margin-bottom: 10px;
+form input {
+    width: 620px;
+    margin-bottom: 20px;
+    
+    
 }
-
 textarea{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 620px;
 }
 
 fieldset p{
     display: inline-block;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 0;
+   
 }
 
+fieldset input{
+    width: 100px;
+    margin-left: -40px;
+}
 fieldset{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    width: 600px;
 }
 
 button{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 table{
@@ -41,10 +51,11 @@ table{
     margin-bottom: 10px;
 }
 th {
-    border: 1px solid #242423;
+    border: 1px solid #242423; 
 }
 tr td{
-    border: 1px solid #242423;
+    border: 1px solid #242423; 
+    width: 310px;
 }
 ul li{
     list-style-type: none;
