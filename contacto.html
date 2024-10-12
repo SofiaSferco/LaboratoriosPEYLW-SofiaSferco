@@ -97,7 +97,7 @@
 
                 <p><input type="radio" name="telefono" id="telefono"><br>
                 <label for="telefono">Teléfono</label></p>
-        </fieldset>
+        </fieldset><br>
            <!--radio seusa para seleccion una unica opcion pero me pasa que usando type radio no puedo desmarcar las opciones si Java, deberia usar checkbox
            que es lo que me pide hacer en " tipo de suscripción "-->
         <fieldset>
@@ -113,7 +113,7 @@
 
                 <p><input type="checkbox" name="eventos" id="eventos"><br>
                     <label for="eventos">Eventos</label><br></p>
-        </fieldset>
+        </fieldset><br>
         
         <button type="button">Cargar</button><br>
 
@@ -127,10 +127,13 @@
             El <tbody>elemento debe tener una o más etiquetas <tr> dentro.
                 El <tfoot>elemento debe tener una o más etiquetas <tr> dentro..-->
      <table>
+        <thead>
         <tr>
             <th>Campo</th>
             <th>Valor</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>Nombre</td>
             <td></td>
@@ -163,6 +166,7 @@
             <td>Código Postal</td>
             <td></td>
         </tr>
+        </tbody>
         </table>
         </div>
     </form>
