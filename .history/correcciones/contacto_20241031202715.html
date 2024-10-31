@@ -25,7 +25,7 @@
             <input type="email" id="email" name="email" required><br>
             
             <label for="tel">Teléfono:</label><br>
-            <input type="tel" id="tel" name="telefono" placeholder="Ingrese su número"><br>
+            <input type="tel" id="tel" name="tel" placeholder="Ingrese su número"><br>
             
             <label for="edad">Edad:</label><br>
             <input type="number" id="edad" name="edad" min="16" max="120"><br>
@@ -43,26 +43,24 @@
             </datalist><br>
             
             <label for="codpos">Código Postal:</label><br>
-            <input type="text" id="codpos" name="codigo_postal" pattern="[A-Z]\d{4}[A-Z]{3}" title="El formato debe tener la forma A1234ABC"><br>
+            <input type="text" id="codpos" name="codpos" pattern="[A-Z]\d{4}[A-Z]{3}" title="El formato debe tener la forma A1234ABC"><br>
             
             <fieldset>
                 <legend>Método preferido de contacto:</legend>
-                <input type="radio" name="contacto_preferido" id="correo_electronico" value="correo_electronico" checked>
+                <input type="radio" name="contacto" id="correo_electronico" checked>
                 <label for="correo_electronico">Correo electrónico</label><br>
-                <input type="radio" name="contacto_preferido" id="correo_postal" value="correo_postal">
+                <input type="radio" name="contacto" id="correo_postal">
                 <label for="correo_postal">Correo postal</label><br>
-                <input type="radio" name="contacto_preferido" id="telefono" value="telefono">
+                <input type="radio" name="contacto" id="telefono">
                 <label for="telefono">Teléfono</label>
             </fieldset><br>
             
             <fieldset>
                 <legend>Tipo de suscripción:</legend>
-                <input type="checkbox" id="novedades" name="suscripcion[]" value="novedades">
+                <input type="checkbox" id="novedades">
                 <label for="novedades">Recibir novedades</label><br>
-                <input type="checkbox" id="publicidad" name="suscripcion[]" value="publicidad">
-                <label for="publicidad">Recibir publicidad</label><br>
-                <input type="checkbox" id="eventos" name="suscripcion[]" value="eventos">
-                <label for="eventos">Recibir eventos</label>
+                <input type="checkbox" id="publicidad">
+                <label for="publicidad">Recibir publicidad</label>
             </fieldset><br>
             
             <button type="submit">Enviar</button>
@@ -76,4 +74,3 @@
     </footer>
 </body>
 </html>
-
