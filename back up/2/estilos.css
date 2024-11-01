@@ -1,24 +1,8 @@
 header{
     background-color: #242423;
+    padding: 40px 0;
     text-align: center;
-    color: rgb(255, 255, 255);      
-    border-left: 2px solid #dfff69;
-    border-right: 2px solid #dfff69;  
-    position: fixed;            
-    top: 0;                     
-    left: 0;                    
-    width: 96vw;               
-    height: 60px;               
-    display: flex;              
-    align-items: center;       
-    justify-content: space-between; 
-    padding: 0 20px;           
-    z-index: 1000;              
-    box-sizing: border-box; 
-    padding-top: 50px;
-    padding-bottom: 25px;
-    margin: 20px;
-    
+    color: rgb(255, 255, 255);       
 }
 
 nav{
@@ -90,7 +74,6 @@ body{
     background-color: #ffffff;
     color: black;
     
-    
 }
 section{
     text-align: center;
@@ -111,7 +94,6 @@ main{
     height: auto;
     border-left: 2px solid #dfff69;
     border-right: 2px solid #dfff69; 
-    
 }
 
 h1{
@@ -119,7 +101,7 @@ h1{
     margin-bottom: 20px;
     margin-top: 20px;
     text-shadow: 1px 1px 3px #dfff69;
-    font-family: 'Roboto', sans-serif;
+    font-family: arial;
     font-size: 30px;
 }
 h2{
@@ -144,72 +126,4 @@ footer{
     line-height: 8px;
     background-color: #232423;
     color: #ffffff;
-   
-}
-
-.Logo {
-    display: flex;
-    align-items: center; /* Alinea verticalmente el h1 y el logo */
-    margin-bottom: 30px;
-    justify-content: left;
-   
-}
-.Logo h1 {
-    margin-right: 30px; /* Espacio entre el título y el logo */
-    
-}
-
-#logo-curza {
-    width: 100px; 
-    transition: transform 1s ease;
-}
-
-.Logo:hover #logo-curza {
-    transform: rotateY(360deg);
-}
-
-.Titulo {
-    background-color: #ffffff;
-    padding: 40px 0;
-    text-align: center;
-    color: #242423;   
-    border-left: 2px solid #dfff69;
-    border-right: 2px solid #dfff69; 
-    margin-top: 60px;
-}
-
-.Contacto {
-    display: flex;
-    justify-content: center;
-}
-
-.Titulo-fijo {
-    position: sticky;
-    top: 0;
-}
-
-article {
-    max-height: 300px; 
-    overflow-y: auto; 
-}
-
-.back-to-top {
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
-    width: 50px; 
-    height: 50px; 
-    background-color: #333; 
-    color: #fff; 
-    border-radius: 50%; 
-    text-align: center; 
-    line-height: 50px; 
-    text-decoration: none; 
-    font-size: 24px; 
-    transition: background-color 0.3s; 
-    
-}
-
-.back-to-top:hover {
-    background-color: #555; 
 }
