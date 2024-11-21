@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sofía, Sferco, Comahue, Viedma, Desarrollo Web">
+    <meta name="description" content="Contacto de Sofía Sferco">
+    <meta name="author" content="Sofía Sferco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        type="text/css"
+        href="estilos.css">
+    <title>Contacto: Sofía Sferco </title>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+   
+    <header>
+        <div class="Logo">
+            <h1>MI PAGINA WEB</h1>
+            <img id="logo-curza" src="imagen/logocurza.png" alt="Logo CURZA">
+          
+        </div>
+        
+    </header>
+    <div class="Titulo">
+        <h1>¡CONTACTATE CONMIGO!</h1>
+    </div>
+    <main>
+        <div>
+            <p>
+                <h3>Para volver al inicio puedes hacer click en:</h3>
+                 <nav>
+                     <a href="index.html">Hasta la próxima 👍​</a>
+                </nav>
+            </p>
+        </div>
+        <div class="Contacto">
+        <form > <!--action="" method="get"--> 
+           
+           <!-- Atributos de entrada HTML
+            usar esta URL que tiene todos los ELEMENTOS de entrada HTML que necesito
+             https://www.w3schools.com/html/html_form_elements.asp--> 
+    
+        <!-- El <label>elemento define una etiqueta para varios elementos de formulario.-->
+        <!-- El <input>elemento se puede mostrar de varias maneras, dependiendo del type atributo.--> 
+        <!-- El foratributo de la <label>etiqueta debe ser igual al idatributo del <input> elemento para unirlos.--> 
+           <!-- Atributos de entrada HTML
+            usar esta URL que tiene todos los ATRIBUTOS de entrada HTML que necesito
+            https://www.w3schools.com/html/html_form_attributes.asp--> 
+        <div>     
+        <label for="nombre">Nombre (requerido):</label><br>
+        <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" maxlength="20"><br>
+        <label for="email">E-mail (requerido):</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="tel">Teléfono:</label><br>
+        <!--tuve que buscar para saber como hacer para que desaparezca el texto de value al hacer click en el campo para
+        cargar el valor y encontre: 
+        onclick="this.value='';"
+        Tambien si el campo queda vacio paraque vuelva a aparece el value se pone:
+        onblur="if(this.value==''){this.value='Ingrese su teléfono';}"
+        -->
+        <input type="tel" id="tel" name="tel" 
+        value="Ingrese su número" 
+        onclick="this.value='';" 
+        onblur="if(this.value==''){this.value='Ingrese su número';}"><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="16" max="120"><br>
+         <!-- El <textarea>elemento define un campo de entrada de varias líneas (un área de texto):
+            le tengo que poner etiqueta de cierre porque sino toma como el texto que va dentro del campo a todo lo que sigue-->
+        <label for="direccion">Dirección:</label><br>
+        <textarea type="text" id="direccion" name="direccion"></textarea><br>
+        <!-- El <datalist>elemento especifica una lista de opciones predefinidas para un <input>elemento.
+        Los usuarios verán una lista desplegable de las opciones predefinidas a medida que ingresan datos.
+        El listatributo del <input>elemento, debe hacer referencia al idatributo del <datalist>elemento.-->
+        <label for="provincia">Provincia:</label><br>
+        <input list="provincia" name="provincia">
+        <datalist id="provincia">
+            <option value="Chubut">
+            <option value="Río Negro">
+            <option value="Santa Cruz">
+            <option value="Tierra del Fuego">
+        </datalist><br>
+       <!--  pattern (para un type=text) permite definir el patrón o expresión regular permitido, por ejemplo para código postal
+         El atributo patrón: El patternatributo de entrada especifica una expresión regular con la que se compara el valor del campo de entrada cuando se envía el formulario.
+         [A-Z]: Una letra mayúscula.
+         [a-z]: Una letra minuscula.
+         [0-9]: numeros.
+         \d : digitos.
+         {3} : cantidad de caracteres.
+         -->
+         <label for="codpos">Código Postal:</label><br>
+         <input type="text" id="codpos" name="codpos" pattern="[A-Z]\d{4}[A-Z]{3}" title="El formato debe tener la forma A1234ABC"><br><br>
+        
+        <!-- para "método preferido de contacto" voy a tener que usar entonces 
+         <fieldset> <legend> y el type va ser radio. Para seleccionar el favorito pro defecto y se usa el atributo checked-->
+       
+         <!--CORRECCIONES!!!!-->
+            <!-- <fieldset>
+          <legend>Método preferido de contacto:</legend>
+             para coincidir formato poner primero el input para que el boton aparezca arriba-->
+           
+              <!--    <p><input type="radio" name="correo_electronico" id="correo_electronico" checked><br>
+                <label for="correo_electronico">Correo electrónico</label></p>
+
+                <p><input type="radio" name="correo_postal" id="correo_postal"><br>
+                <label for="correo_postal">Correo postal</label><br></p>
+
+                <p><input type="radio" name="telefono" id="telefono"><br>
+                <label for="telefono">Teléfono</label></p>
+        </fieldset><br>-->
+
+        <fieldset>
+            <legend>Método preferido de contacto:</legend>
+            <input type="radio" name="contacto_preferido" id="correo_electronico" value="correo_electronico" checked>
+            <label for="correo_electronico">Correo electrónico</label><br>
+            <input type="radio" name="contacto_preferido" id="correo_postal" value="correo_postal">
+            <label for="correo_postal">Correo postal</label><br>
+            <input type="radio" name="contacto_preferido" id="telefono" value="telefono">
+            <label for="telefono">Teléfono</label>
+        </fieldset><br>
+
+           <!--radio seusa para seleccion una unica opcion pero me pasa que usando type radio no puedo desmarcar las opciones si Java, deberia usar checkbox
+           que es lo que me pide hacer en " tipo de suscripción "-->
+        
+           <!--CORRECCIONES!!!!-->
+           <!--<fieldset>
+            <legend>Tipo de suscripción:</legend>
+            <p><input type="checkbox" name="noticias" id="noticias"><br>
+                <label for="noticias">Noticias</label></p>
+
+                <p><input type="checkbox" name="promos" id="promos"><br>
+                <label for="promos">Promociones</label><br></p>
+
+                <p><input type="checkbox" name="alertas" id="alertas" checked> <br>
+                <label for="alertas">Alertas</label></p>
+
+                <p><input type="checkbox" name="eventos" id="eventos"><br>
+                    <label for="eventos">Eventos</label><br></p>
+        </fieldset><br>
+        
+        <button type="button">Cargar</button><br>-->
+
+        <fieldset>
+            <legend>Tipo de suscripción:</legend>
+            <input type="checkbox" id="noticias" name="suscripcion[]" value="noticias">
+            <label for="novedades">Noticias</label><br>
+            <input type="checkbox" id="promos" name="suscripcion[]" value="promos">
+            <label for="publicidad">Promociones</label><br>
+            <input type="checkbox" id="alertas" name="suscripcion[]" value="alertas">
+            <label for="publicidad">Alertas</label><br>
+            <input type="checkbox" id="eventos" name="suscripcion[]" value="eventos">
+            <label for="eventos">Eventos</label>
+        </fieldset><br>
+        
+        <button type="submit">Cargar</button>
+
+    <!--ahora usare la etiqueta <table>
+        Una tabla HTML consta de un <table>elemento y uno o más elementos <tr> , <th> y <td> .
+    El elemento <tr> define una fila de tabla, el elemento <th> define un encabezado de tabla y el elemento <td> define una celda de tabla.
+    Una tabla HTML también puede incluir elementos <caption> , <colgroup> , <thead> , <tfoot> y <tbody>
+        (encabezado, cuerpo, pie de página)
+        El <thead>elemento debe tener una o más etiquetas <tr> dentro.
+            El <tbody>elemento debe tener una o más etiquetas <tr> dentro.
+                El <tfoot>elemento debe tener una o más etiquetas <tr> dentro..-->
+     <table>
+        <thead>
+        <tr>
+            <th>Campo</th>
+            <th>Valor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Telefono</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Direccion</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Provincia</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Código Postal</td>
+            <td></td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+    </form>
+    </main>  
+</div> 
+<a href="#" class="back-to-top" id="back-to-top">
+    ↑
+</a>
+</body>
+<footer>
+    <p>
+            Universidad Nacional del Comahue 
+        </p>
+        <p>
+            Sede Atlántica
+        </p>
+        <p>
+            Viedma, Rio Negro
+        </p>
+        <p>
+            &copy;Derechos reservados por el autor
+        </p>
+    </footer> 
+    </html>

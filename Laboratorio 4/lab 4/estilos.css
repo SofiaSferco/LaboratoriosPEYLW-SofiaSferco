@@ -42,40 +42,30 @@ textarea{
 
 fieldset p{
     display: inline-block;
-    
+    margin: 0;
     padding-left: 0;
-    margin: 0 auto;
    
 }
 
 fieldset input{
-    width: 80px;
-    margin: 0 auto;
+    width: 100px;
+    margin-left: -40px;
 }
 fieldset{
-    margin: 0 auto;
     margin-bottom: 10px;
     width: 600px;
-    display: flex;
-    
 }
 
 button{
-    margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 0px;
-    margin-left: 328px;
 }
 
-
-
 table {
-    margin: 0 auto;
     width: 630px;
     border-collapse: collapse;
     margin-bottom: 10px;
     margin-top: 10px;
-    
 }
 
 table, th, td {
@@ -159,13 +149,13 @@ footer{
 
 .Logo {
     display: flex;
-    align-items: center; 
+    align-items: center; /* Alinea verticalmente el h1 y el logo */
     margin-bottom: 30px;
     justify-content: left;
    
 }
 .Logo h1 {
-    margin-right: 30px; 
+    margin-right: 30px; /* Espacio entre el título y el logo */
     
 }
 
@@ -174,17 +164,8 @@ footer{
     transition: transform 1s ease;
 }
 
-@keyframes girarLogo {
-    from {
-        transform: rotateY(0deg); 
-    }
-    to {
-        transform: rotateY(360deg); 
-    }
-}
-
-#logo-curza {
-    animation: girarLogo 3s; 
+.Logo:hover #logo-curza {
+    transform: rotateY(360deg);
 }
 
 .Titulo {
@@ -232,4 +213,3 @@ article {
 .back-to-top:hover {
     background-color: #555; 
 }
-

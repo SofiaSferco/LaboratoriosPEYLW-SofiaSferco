@@ -1,0 +1,113 @@
+<!--Recordar que todas las etiquetas y elementos que use debo cerrarlos-->
+<!--Inicio con <!DOCTYPE html> para declararle al navegador que voy a pasarle un documento HTML-->
+<!DOCTYPE html>
+<html lang="es">
+<!--Desde aqui hasta no empezar con el <body> nada va a aparecer en la pagina -->  
+<head>
+    <!--Si le pongo los meta tag le doy info a los motores de búsqueda y al navegador,
+    como todo lo que se plantea en el <head> pero no aparecen visbles en la pagina, es para agregar descripcion-->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sofía, Sferco, Comahue, Viedma, Desarrollo Web">
+    <meta name="description" content="Presentación del perfil de Sofía Sferco">
+    <meta name="author" content="Sofía Sferco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Con <link> le voy a relacionar el archivo que contiene el formato, le voy a decir con rel que se va a relacionar con el estilo, 
+    con type el tipo de archivo que en este caso va a ser css y con href le doy el URL del archivo donde esta el formato-->
+
+    <link 
+        rel="stylesheet" 
+        type="text/css"
+        href="estilos.css">
+
+    <!--Es el tiutulo de la pestaña que vamos a ver en el navegador--> 
+    <title>Home: Sofía Sferco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+ <!--En el <body> voy a poner toda la informacion que quiero aparezca visible en la pagina--> 
+<body>
+    <!--Pongo el <header> porque es introductorio a la una informacion que va a tener la pagina,
+        por eso lo pongo dentro del <body>, que en este caso va ser info sobre mi, es decir pondre mi nombre a modo de titulo--> 
+    <header>
+       <!-- Tag <h1>, <h2> .. <h6>– Representan títulos para cada sección--> 
+        <div class="Logo">
+            <h1>MI PAGINA WEB</h1>
+            <img id="logo-curza" src="imagen/logocurza.png" alt="Logo CURZA">
+          
+        </div>
+      
+       
+    </header>
+    <div class="Titulo">
+        <h1>SOFIA JIMENA SFERCO GIL</h1>
+        <nav>
+            <ul>
+                <li><a href="acercade.html">PERFIL</a></li> |
+                <li><a href="foto.html">FOTO</a></li> |
+                <li><a href="contacto.html">CONTACTO</a></li> 
+            </ul>
+        </nav>
+    </div>
+    <!-- <main> Representa el contenido pricipal, aca voy a incluir las secciones de la pagina y las voy a dividir con <div> >--> 
+    <main>
+        <!-- <div> es el contenedor genérico para el contenido--> 
+        <div>
+            <h2>SPOILER: Me dicen "Córdoba" 😂</h2>
+        </div>
+
+        <div>
+        <!-- <p> distribuye el texto en parrafos--> 
+        <p>
+            <h3>La idea de esta página es que puedas conocer más acerca de mi.</h3>
+            Podrás encontrar info acerca de:
+        </p>      
+            <p>
+                <!--ahora con <ul> defino una lista no ordenada y con <li> declaro cada elemento de la lista--> 
+                <ul>
+                    <li>
+                        👉 Mis lugares |
+                    </li>
+                    <li>
+                       Edad |
+                    </li>
+                    <li>
+                        Ocupación |
+                     </li>      
+                     <li>
+                       Gustos 
+                     </li> 
+                </ul>
+           <!-- Si te interesa obtener más información acerca de mi bio te invito a hacer click en alguna de las opciones de la barra debajo de mi nombre.--> 
+             <!--voy a usar <nav> para proporcionar el enlace de navegacion de la pagina con el documento acercademi.html,
+                y para crear ese enlace voy a usar <a> y acompaño con href con el cual defino el URL del enlace 
+                (como lo hice anteriormente con <link> para enlazar el formato) y so <p> para generar el espacio--> 
+             <!--<nav> 
+                <a href="acercade.html">
+                    <p>
+                        ¡Quiero leer más! 😃
+                    </p>
+                </a>
+            </nav>--> 
+        </div>
+    </main>
+    <a href="#" class="back-to-top" id="back-to-top">
+        ↑
+    </a>
+</body>
+<!--cierro con un <footer> que sirve como pie de la pagina para dar info de los derechos y mas info extra de ubicacion o contacto podria ser
+    Uso <p> para generar los espacios--> 
+<footer>
+        <p>
+            Universidad Nacional del Comahue 
+        </p>
+        <p>
+            Sede Atlántica
+        </p>
+        <p>
+            Viedma, Rio Negro
+        </p>
+        <p>
+            &copy;Derechos reservados por el autor
+        </p>
+</footer>   
+
+</html>
