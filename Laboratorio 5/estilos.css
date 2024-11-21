@@ -1,0 +1,235 @@
+header{
+    background-color: #242423;
+    text-align: center;
+    color: rgb(255, 255, 255);      
+    border-left: 2px solid #dfff69;
+    border-right: 2px solid #dfff69;  
+    position: fixed;            
+    top: 0;                     
+    left: 0;                    
+    width: 96vw;               
+    height: 60px;               
+    display: flex;              
+    align-items: center;       
+    justify-content: space-between; 
+    padding: 0 20px;           
+    z-index: 1000;              
+    box-sizing: border-box; 
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin: 20px;
+    
+}
+
+nav{
+    align-items: center;
+    font-weight: bold;
+    font-family: arial;
+    color: rgb(255, 255, 255); 
+    padding: 5px; 
+}
+
+form input {
+    width: 620px;
+    margin-bottom: 20px;
+    
+    
+}
+textarea{
+    margin-bottom: 20px;
+    width: 620px;
+}
+
+fieldset p{
+    display: inline-block;
+    
+    padding-left: 0;
+    margin: 0 auto;
+   
+}
+
+fieldset input{
+    width: 80px;
+    margin: 0 auto;
+}
+fieldset{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 600px;
+    display: flex;
+    
+}
+
+button{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 328px;
+}
+
+
+
+table {
+    margin: 0 auto;
+    width: 630px;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+table, th, td {
+    border: 1px solid black; 
+    padding: 8px;
+    text-align: left;
+}   
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    color: #dfff69; 
+    text-shadow: 0px 0px 5px black;
+}
+
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-cerif;
+    background-color: #ffffff;
+    color: black;
+    
+    
+}
+section{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid #dfff69;
+    border-right: 2px solid #dfff69; 
+    background-color: #dfff69; 
+}
+img{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+main{
+    margin-bottom: 0px;
+    text-align: justify;
+    padding: 10px;
+    height: auto;
+    border-left: 2px solid #dfff69;
+    border-right: 2px solid #dfff69; 
+    
+}
+
+h1{
+   
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px #dfff69;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+h2{
+    background-color: #dfff69; 
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1px;
+    font-size: 17px;
+}
+h3{
+    font-size: 17px;
+    text-align: left;
+}
+
+
+footer{
+    
+    padding: 10px ;
+    font-family: Arial, sans-cerif;
+    line-height: 8px;
+    background-color: #232423;
+    color: #ffffff;
+   
+}
+
+.Logo {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 30px;
+    justify-content: left;
+   
+}
+.Logo h1 {
+    margin-right: 30px; 
+    
+}
+
+#logo-curza {
+    width: 100px; 
+    transition: transform 1s ease;
+}
+
+@keyframes girarLogo {
+    from {
+        transform: rotateY(0deg); 
+    }
+    to {
+        transform: rotateY(360deg); 
+    }
+}
+
+#logo-curza {
+    animation: girarLogo 3s; 
+}
+
+.Titulo {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    color: #242423;   
+    border-left: 2px solid #dfff69;
+    border-right: 2px solid #dfff69; 
+    margin-top: 60px;
+}
+
+.Contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.Titulo-fijo {
+    position: sticky;
+    top: 0;
+}
+
+article {
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.back-to-top {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #333; 
+    color: #fff; 
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 50px; 
+    text-decoration: none; 
+    font-size: 24px; 
+    transition: background-color 0.3s; 
+    
+}
+
+.back-to-top:hover {
+    background-color: #555; 
+}
+

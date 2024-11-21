@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Sofía, Sferco, Comahue, Viedma, Desarrollo Web">
+    <meta name="description" content="Contacto de Sofía Sferco">
+    <meta name="author" content="Sofía Sferco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Contacto: Sofía Sferco </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <h1>MI PAGINA WEB</h1>
+            <img id="logo-curza" src="imagen/logocurza.png" alt="Logo CURZA">
+        </div>
+    </header>
+    <div class="Titulo">
+        <h1>¡CONTACTATE CONMIGO!</h1>
+    </div>
+    <main>
+        <div>
+            <p>
+                <h3>Para volver al inicio puedes hacer click en:</h3>
+                <nav>
+                    <a href="index.html">Hasta la próxima 👍​</a>
+                </nav>
+            </p>
+        </div>
+        <div class="Contacto">
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre (requerido):</label><br>
+                <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" maxlength="20"><br>
+                <label for="email">E-mail (requerido):</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="tel">Teléfono:</label><br>
+                <input type="tel" id="tel" name="tel" value="Ingrese su número"><br>
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" min="16" max="120"><br>
+                <label for="direccion">Dirección:</label><br>
+                <textarea id="direccion" name="direccion"></textarea><br>
+                <label for="provincia">Provincia:</label><br>
+                <input list="provincia" name="provincia">
+                <datalist id="provincia">
+                    <option value="Chubut">
+                    <option value="Río Negro">
+                    <option value="Santa Cruz">
+                    <option value="Tierra del Fuego">
+                </datalist><br>
+                <label for="codpos">Código Postal:</label><br>
+                <input type="text" id="codpos" name="codpos" pattern="[A-Z]\d{4}[A-Z]{3}" title="El formato debe tener la forma A1234ABC"><br><br>
+            </form>
+        </div>
+        <fieldset>
+            <legend>Método preferido de contacto:</legend>
+            <input type="radio" name="contacto_preferido" id="correo_electronico" value="correo_electronico" checked>
+            <label for="correo_electronico">Correo electrónico</label><br>
+            <input type="radio" name="contacto_preferido" id="correo_postal" value="correo_postal">
+            <label for="correo_postal">Correo postal</label><br>
+            <input type="radio" name="contacto_preferido" id="telefono" value="telefono">
+            <label for="telefono">Teléfono</label>
+        </fieldset><br>
+   <fieldset>
+            <legend>Tipo de suscripción:</legend>
+            <input type="checkbox" id="noticias" name="suscripcion[]" value="noticias">
+            <label for="novedades">Noticias</label><br>
+            <input type="checkbox" id="promos" name="suscripcion[]" value="promos">
+            <label for="publicidad">Promociones</label><br>
+            <input type="checkbox" id="alertas" name="suscripcion[]" value="alertas">
+            <label for="publicidad">Alertas</label><br>
+            <input type="checkbox" id="eventos" name="suscripcion[]" value="eventos">
+            <label for="eventos">Eventos</label>
+        </fieldset><br>
+        
+        <button type="submit">Cargar</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-datos">
+                <tr>
+                    <td>Nombre</td>
+                    <td id="tabla-nombre"></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td id="tabla-apellido"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td id="tabla-email"></td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td id="tabla-tel"></td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td id="tabla-edad"></td>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td id="tabla-direccion"></td>
+                </tr>
+                <tr>
+                    <td>Provincia</td>
+                    <td id="tabla-provincia"></td>
+                </tr>
+                <tr>
+                    <td>Código Postal</td>
+                    <td id="tabla-codpos"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>  
+    <script>
+        // Seleccionar todos los campos del formulario
+        const formulario = document.getElementById('formulario-contacto');
+        const tablaDatos = {
+            nombre: document.getElementById('tabla-nombre'),
+            apellido: document.getElementById('tabla-apellido'),
+            email: document.getElementById('tabla-email'),
+            tel: document.getElementById('tabla-tel'),
+            edad: document.getElementById('tabla-edad'),
+            direccion: document.getElementById('tabla-direccion'),
+            provincia: document.getElementById('tabla-provincia'),
+            codpos: document.getElementById('tabla-codpos'),
+        };
+
+        // Función para reflejar datos en la tabla
+        formulario.addEventListener('input', (e) => {
+            const { id, value } = e.target;
+            if (tablaDatos[id]) {
+                tablaDatos[id].textContent = value;
+            }
+        });
+    </script>
+    <a href="#" class="back-to-top" id="back-to-top">
+        ↑
+    </a>
+</body>
+<footer>
+    <p>Universidad Nacional del Comahue</p>
+    <p>Sede Atlántica</p>
+    <p>Viedma, Rio Negro</p>
+    <p>&copy;Derechos reservados por el autor</p>
+</footer>
+</html>
