@@ -233,3 +233,35 @@ article {
     background-color: #555; 
 }
 
+#attempts {
+    font-size: 20px;
+    font-weight: bold;
+}
+#feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+/* Formulario de adivinanza */
+section {
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #dfff69;
+    border-left: 2px solid #dfff69;
+    border-right: 2px solid #dfff69;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#guess-button{
+    margin: 0;
+    text-align:left;
+}
+
+#leer-mas-cv {
+    margin: 0;
+    text-align:left;
+}
+
