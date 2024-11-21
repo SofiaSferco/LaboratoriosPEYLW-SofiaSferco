@@ -31,18 +31,18 @@ toggleCvButton.addEventListener('click', () => {
     toggleCvButton.textContent = isHidden ? 'Leer menos' : 'Leer más';
 });
 
-
+// Selecciona el botón y el contenido adicional
 const botonLeerMas = document.getElementById("leer-mas");
 const contenidoCompleto = document.getElementById("contenido-completo");
 
-
+// Agrega un evento al botón
 botonLeerMas.addEventListener("click", () => {
-  
+    // Alterna la visibilidad del contenido adicional
     if (contenidoCompleto.style.display === "none") {
         contenidoCompleto.style.display = "block";
-        botonLeerMas.textContent = "Leer menos"; 
+        botonLeerMas.textContent = "Leer menos"; // Cambia el texto del botón
     } else {
         contenidoCompleto.style.display = "none";
-        botonLeerMas.textContent = "Leer más"; 
+        botonLeerMas.textContent = "Leer más"; // Cambia el texto del botón
     }
 });

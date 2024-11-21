@@ -43,6 +43,6 @@ botonLeerMas.addEventListener("click", () => {
         botonLeerMas.textContent = "Leer menos"; 
     } else {
         contenidoCompleto.style.display = "none";
-        botonLeerMas.textContent = "Leer más"; 
+        botonLeerMas.textContent = "Leer más"; // Cambia el texto del botón
     }
 });
